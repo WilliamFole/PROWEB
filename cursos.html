@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boas-Vindas Caloiros - ISPT Tete</title>
+    <link rel="stylesheet" href="/PAGINAS/CSS/css.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img src="/IMAGENS/ispt.jpeg" alt="Emblema do ISPT Tete" class="logo" />
+        <div class="header-text">
+          <h1>Instituto Superior Politécnico de Tete</h1>
+          <p>Bem-vindos, Caloiros 2025!</p>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/PAGINAS/HTML/Pagina Inicial.html">Início</a></li>
+          <li><a href="#about">Sobre o ISPT</a></li>
+          <li><a href="/PAGINAS/HTML/servicos.html">Serviços</a></li>
+          <li><a href="/PAGINAS/HTML/contacto.html">Contactos</a></li>
+          <li><a href="/PAGINAS/HTML/Fórum Caloiros.html">FORUM</a></li>
+        </ul>
+        <div class="mobile-menu">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+
+    <section class="courses-section">
+      <div class="container">
+        <h2>Nossos Cursos</h2>
+        <div class="course-filter">
+          <button class="btn active" data-filter="all">Todos</button>
+          <button class="btn" data-filter="undergrad">Licenciaturas</button>
+          <button class="btn" data-filter="postgrad">Pós-Graduações</button>
+        </div>
+
+        <div class="courses-grid">
+          <div class="course-card" data-category="undergrad">
+            <img src="/IMAGENS/IT.jpeg" alt="Engenharia Informática" />
+            <div class="course-info">
+              <h3>Engenharia Informática</h3>
+              <p class="duration">Duração: 4 anos</p>
+              <p class="description">
+                Formação em desenvolvimento de software, redes de computadores e
+                sistemas de informação
+              </p>
+              <a href="#" class="btn">Saiba Mais</a>
+            </div>
+          </div>
+
+          <!-- Após o grid de cursos -->
+          <section class="course-details">
+            <div class="container">
+              <div class="course-tabs">
+                <div class="tab-header">
+                  <button class="tab-link active" data-tab="admission">
+                    Admissão
+                  </button>
+                  <button class="tab-link" data-tab="curriculum">
+                    Grade Curricular
+                  </button>
+                  <button class="tab-link" data-tab="careers">
+                    Saídas Profissionais
+                  </button>
+                </div>
+
+                <div class="tab-content active" id="admission">
+                  <h3>Processo de Admissão 2024</h3>
+                  <ol>
+                    <li>Pré-inscrição online: 1-30 de Setembro</li>
+                    <li>Prova de acesso: 15 de Outubro</li>
+                    <li>Entrevista pessoal: 20-25 de Outubro</li>
+                    <li>Matrículas: 1-15 de Novembro</li>
+                  </ol>
+                  <div class="downloads">
+                    <a href="#" class="btn"
+                      ><i class="fas fa-file-pdf"></i> Edital 2024 (PDF)</a
+                    >
+                    <a href="#" class="btn"
+                      ><i class="fas fa-list-alt"></i> Requisitos de Admissão</a
+                    >
+                  </div>
+                </div>
+
+                <div class="tab-content" id="curriculum">
+                  <h3>Estrutura Curricular - Engenharia Informática</h3>
+                  <div class="semester">
+                    <h4>1º Ano - Semestre 1</h4>
+                    <ul>
+                      <li>Matemática I</li>
+                      <li>Algoritmos e Programação</li>
+                      <li>Sistemas Digitais</li>
+                      <li>Inglês Técnico</li>
+                    </ul>
+                  </div>
+                  <!-- Mais semestres -->
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="faq-courses">
+            <div class="container">
+              <h2>Perguntas Frequentes</h2>
+              <div class="accordion">
+                <div class="accordion-item">
+                  <button class="accordion-header">
+                    Quais os documentos necessários para matrícula?
+                    <i class="fas fa-chevron-down"></i>
+                  </button>
+                  <div class="accordion-content">
+                    <ul>
+                      <li>Certificado de Habilitações</li>
+                      <li>BI ou Passaporte</li>
+                      <li>4 Fotografias</li>
+                      <li>Comprovativo de Pagamento</li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Mais itens FAQ -->
+              </div>
+            </div>
+          </section>
+
+          <div class="course-card" data-category="undergrad">
+            <img src="/IMAGENS/mines.jpeg" alt="Engenharia de Minas" />
+            <div class="course-info">
+              <h3>Engenharia de Minas</h3>
+              <p class="duration">Duração: 4 anos</p>
+              <p class="description">
+                Formação em administração, finanças e gestão estratégica de
+                organizações
+              </p>
+              <a href="#" class="btn">Saiba Mais</a>
+            </div>
+          </div>
+
+          <div class="course-card" data-category="postgrad">
+            <img src="/IMAGENS/process.jpeg" alt="Processamento mineral" />
+            <div class="course-info">
+              <h3>Processamento mineral</h3>
+              <p class="duration">Duração: 4 anos</p>
+              <p class="description">
+                Pós-graduação em administração de empresas com foco em liderança
+                estratégica
+              </p>
+              <a href="#" class="btn">Saiba Mais</a>
+            </div>
+          </div>
+
+          <div class="course-card" data-category="postgrad">
+            <img src="/IMAGENS/accnt.jpeg" alt="Contabilidade" />
+            <div class="course-info">
+              <h3>Contabilidade</h3>
+              <p class="duration">Duração: 4 anos</p>
+              <p class="description">
+                Pós-graduação em administração de empresas com foco em liderança
+                estratégica
+              </p>
+              <a href="#" class="btn">Saiba Mais</a>
+            </div>
+          </div>
+
+          <div class="course-card" data-category="postgrad">
+            <img
+              src="/IMAGENS/accnt.jpeg"
+              alt="Contabilidade e administracao publica"
+            />
+            <div class="course-info">
+              <h3>Contabilidade e administração Publica</h3>
+              <p class="duration">Duração: 4 anos</p>
+              <p class="description">
+                Pós-graduação em administração de empresas com foco em liderança
+                estratégica
+              </p>
+              <a href="#" class="btn">Saiba Mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="/IMAGENS/ispt.jpeg" alt="ISPT Logo" />
+            <p>Instituto Superior Politécnico de Tete</p>
+          </div>
+          <div class="footer-links">
+            <h3>Links Úteis</h3>
+            <ul>
+              <li><a href="#">Portal do Estudante</a></li>
+              <li><a href="#">Biblioteca</a></li>
+              <li><a href="#">Regulamentos</a></li>
+              <li><a href="#">Bolsa de Estudo</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact" id="contact">
+            <h3>Contactos</h3>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> Av. do Zumbo, Tete,
+              Moçambique
+            </p>
+            <p><i class="fas fa-phone"></i> +258 252 123 456</p>
+            <p><i class="fas fa-envelope"></i> info@ispt.ac.mz</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 ISPT Tete - Todos os direitos reservados</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

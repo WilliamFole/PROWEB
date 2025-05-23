@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Estudante</title>
+    <link rel="stylesheet" href="/PAGINAS/CSS/cad.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img src="/IMAGENS/ispt.jpeg" alt="ISPT" class="logo" />
+        <div class="header-text">
+          <h1>Instituto Superior Politécnico de Tete</h1>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/PAGINAS/HTML/Pagina Inicial.html">Início</a></li>
+          <li><a href="#about">Sobre o ISPT</a></li>
+          <li><a href="/PAGINAS/HTML/cursos.html">Cursos</a></li>
+          <li><a href="/PAGINAS/HTML/servicos.html">Serviços</a></li>
+          <li><a href="/PAGINAS/HTML/contacto.html">Contactos</a></li>
+          <li><a href="/PAGINAS/HTML/Fórum Caloiros.html">FORUM</a></li>
+        </ul>
+        <div class="mobile-menu">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+
+    <h2>Formulário de Cadastro de Estudante</h2>
+    <form action="#" method="POST">
+      <fieldset>
+        <legend>Informações Pessoais</legend>
+
+        <div class="form-group">
+          <label for="nome">Nome Completo:</label>
+          <input type="text" id="nome" name="nome" required />
+        </div>
+
+        <div class="form-group">
+          <label for="nascimento">Data de Nascimento:</label>
+          <input type="date" id="nascimento" name="nascimento" required />
+        </div>
+
+        <div class="form-group">
+          <label>Gênero:</label>
+          <div>
+            <input
+              type="radio"
+              id="masculino"
+              name="genero"
+              value="masculino"
+              required
+            />
+            <label for="masculino" style="display: inline">Masculino</label>
+
+            <input type="radio" id="feminino" name="genero" value="feminino" />
+            <label for="feminino" style="display: inline">Feminino</label>
+
+            <input type="radio" id="outro" name="genero" value="outro" />
+            <label for="outro" style="display: inline">Outro</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Informações de Contato</legend>
+
+        <div class="form-group">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="telefone">Telefone:</label>
+          <input
+            type="tel"
+            id="telefone"
+            name="telefone"
+            pattern="[0-9]{10,11}"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="endereco">Endereço:</label>
+          <textarea id="endereco" name="endereco" rows="3" required></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Informações Acadêmicas</legend>
+
+        <div class="form-group">
+          <label for="curso">Curso:</label>
+          <select id="curso" name="curso" required>
+            <option value="">Selecione o curso</option>
+            <option value="ciencia_computacao">Engenharia Informatica</option>
+            <option value="engenharia">Engenharia de Minas</option>
+            <option value="medicina">Engenharia e Processamento Mineral</option>
+            <option value="administracao">
+              Contabilidade e Administração Publica
+            </option>
+            <option value="direito">Contabilidade e Auditoria</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="ano_ingresso">Ano de Ingresso:</label>
+          <input
+            type="number"
+            id="ano_ingresso"
+            name="ano_ingresso"
+            min="2000"
+            max="2027"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="matricula">Número de Matrícula:</label>
+          <input
+            type="text"
+            id="matricula"
+            name="matricula"
+            pattern="[A-Z0-9]{6,12}"
+            required
+          />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Contato de Emergência</legend>
+
+        <div class="form-group">
+          <label for="contato_emergencia">Nome do Contato:</label>
+          <input
+            type="text"
+            id="contato_emergencia"
+            name="contato_emergencia"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="tel_emergencia">Telefone:</label>
+          <input
+            type="tel"
+            id="tel_emergencia"
+            name="tel_emergencia"
+            pattern="[0-9]{10,11}"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="parentesco">Parentesco:</label>
+          <input type="text" id="parentesco" name="parentesco" required />
+        </div>
+      </fieldset>
+
+      <div class="form-group">
+        <label for="observacoes">Observações:</label>
+        <textarea id="observacoes" name="observacoes" rows="4"></textarea>
+      </div>
+
+      <button type="submit">Cadastrar</button>
+    </form>
+  </body>
+</html>

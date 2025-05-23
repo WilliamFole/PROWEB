@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fórum dos Caloiros - Universidade XPTO</title>
+    <link rel="stylesheet" href="/PAGINAS/CSS/global.css" />
+    <script src="/PAGINAS/JavaScript/global.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header class="forum-header">
+      <div class="header-content">
+        <h1>🎓 Fórum dos Caloiros ISPT</h1>
+        <nav class="main-nav">
+          <a href="/PAGINAS/HTML/Pagina Inicial.html" class="active"
+            ><i class="fas fa-home"></i> Início</a
+          >
+          <a href="#"><i class="fas fa-users"></i> Comunidade</a>
+          <a href="#"><i class="fas fa-calendar-alt"></i> Eventos</a>
+          <a href="/PAGINAS/HTML/cursos.html"
+            ><i class="fas fa-school"></i> Cursos</a
+          >
+          <a href="/PAGINAS/HTML/servicos.html"
+            ><i class="fas fa-book"></i> Serviços</a
+          >
+          <a href="/PAGINAS/HTML/contacto.html"
+            ><i class="fas fa-contact-card"></i> Contactos</a
+          >
+          <a href="/PAGINAS/HTML/sobre.html"
+            ><i class="fas fa-info"></i> Sobre o ISPT</a
+          >
+          <div class="user-menu">
+            <a href="#" class="login-btn"
+              ><i class="fas fa-sign-in-alt"></i> Entrar</a
+            >
+            <a href="/PAGINAS/HTML/cadastro.html" class="register-btn"
+              ><i class="fas fa-user-plus"></i> Registrar</a
+            >
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="forum-container">
+      <!-- Barra Lateral -->
+      <aside class="sidebar">
+        <div class="sidebar-section">
+          <h3>Categorias</h3>
+          <ul class="categories">
+            <li>
+              <a href="#" class="active"
+                ><i class="fas fa-door-open"></i> Introdução</a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-graduation-cap"></i> Acadêmico</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-home"></i> Alojamento</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-bus"></i> Transporte</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-lightbulb"></i> Dicas</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sidebar-stats">
+          <h3>Estatísticas</h3>
+          <div class="stats-box">
+            <p><i class="fas fa-users"></i> 1,234 Membros</p>
+            <p><i class="fas fa-comments"></i> 5,678 Posts</p>
+            <p><i class="fas fa-clock"></i> 89 Tópicos Hoje</p>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Área de Tópicos -->
+      <section class="main-content">
+        <!-- Tópico Fixo -->
+        <article class="forum-post pinned">
+          <div class="post-header">
+            <img
+              src="images/admin-avatar.png"
+              alt="Admin"
+              class="user-avatar"
+            />
+            <div class="post-info">
+              <h2>
+                <i class="fas fa-thumbtack"></i> [IMPORTANTE] Regras do Fórum
+              </h2>
+              <div class="post-meta">
+                <span class="author">Admin</span>
+                <span class="timestamp">Postado em: 15/08/2023</span>
+                <span class="comments"
+                  ><i class="fas fa-comments"></i> 45 Respostas</span
+                >
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Lista de Tópicos -->
+        <div class="topic-list">
+          <!-- Tópico 1 -->
+          <article class="forum-topic">
+            <div class="topic-icon">
+              <i class="fas fa-question-circle"></i>
+            </div>
+            <div class="topic-content">
+              <h3>Como acessar o portal acadêmico?</h3>
+              <div class="topic-meta">
+                <span class="author">João Silva</span>
+                <span class="timestamp">15 min atrás</span>
+                <span class="category"
+                  ><i class="fas fa-tag"></i> Acadêmico</span
+                >
+              </div>
+              <div class="topic-stats">
+                <span class="views"><i class="fas fa-eye"></i> 128</span>
+                <span class="replies"><i class="fas fa-reply"></i> 7</span>
+              </div>
+            </div>
+            <div class="latest-activity">
+              <small>Última resposta:</small>
+              <div class="activity-user">
+                <img
+                  src="images/user-avatar.png"
+                  alt="User"
+                  class="mini-avatar"
+                />
+                <span>Maria Santos</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Tópico 2 -->
+          <article class="forum-topic">
+            <div class="topic-icon">
+              <i class="fas fa-bed"></i>
+            </div>
+            <div class="topic-content">
+              <h3>Ofereço vaga em república perto do campus</h3>
+              <div class="topic-meta">
+                <span class="author">Carlos Oliveira</span>
+                <span class="timestamp">2 horas atrás</span>
+                <span class="category"
+                  ><i class="fas fa-tag"></i> Alojamento</span
+                >
+              </div>
+              <div class="topic-stats">
+                <span class="views"><i class="fas fa-eye"></i> 89</span>
+                <span class="replies"><i class="fas fa-reply"></i> 3</span>
+              </div>
+            </div>
+            <div class="latest-activity">
+              <small>Última resposta:</small>
+              <div class="activity-user">
+                <img
+                  src="images/user-avatar2.png"
+                  alt="User"
+                  class="mini-avatar"
+                />
+                <span>Ana Costa</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Paginação -->
+        <div class="pagination">
+          <a href="#" class="page active">1</a>
+          <a href="#" class="page">2</a>
+          <a href="#" class="page">3</a>
+          <span class="page">...</span>
+          <a href="#" class="page">10</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="forum-footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Sobre Nós</h4>
+          <ul>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Termos de Uso</a></li>
+            <li><a href="#">Política de Privacidade</a></li>
+          </ul>
+        </div>
+
+        <!-- Modal de Registro -->
+        <div id="registerModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Criar Conta</h2>
+            <form id="registerForm">
+              <div class="form-group">
+                <label for="username">Nome de Usuário:</label>
+                <input type="text" id="username" required />
+              </div>
+              <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" required />
+              </div>
+              <div class="form-group">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" required />
+              </div>
+              <button type="submit" class="btn-submit">Registrar</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Barra de Busca (Adicione no header) -->
+        <div class="search-bar">
+          <input type="text" placeholder="Buscar tópicos..." />
+          <button><i class="fas fa-search"></i></button>
+        </div>
+
+        <!-- Botão de Novo Tópico (Adicione no main-content) -->
+        <button class="new-topic-btn">
+          <i class="fas fa-plus"></i> Novo Tópico
+        </button>
+
+        <!-- Modal de Novo Tópico -->
+        <div id="newTopicModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Criar Novo Tópico</h2>
+            <form id="newTopicForm">
+              <div class="form-group">
+                <label for="topicTitle">Título:</label>
+                <input type="text" id="topicTitle" required />
+              </div>
+              <div class="form-group">
+                <label for="topicCategory">Categoria:</label>
+                <select id="topicCategory" required>
+                  <option value="">Selecione...</option>
+                  <option>Acadêmico</option>
+                  <option>Alojamento</option>
+                  <option>Transporte</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="topicContent">Conteúdo:</label>
+                <textarea id="topicContent" rows="6" required></textarea>
+              </div>
+              <button type="submit" class="btn-submit">Publicar</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Recursos</h4>
+          <ul>
+            <li><a href="#">Guia do Calouro</a></li>
+            <li><a href="#">Mapa do Campus</a></li>
+            <li><a href="#">Calendário Acadêmico</a></li>
+          </ul>
+        </div>
+        <div class="footer-section social">
+          <h4>Redes Sociais</h4>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-discord"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© 2024 Fórum dos Caloiros XPTO - Todos os direitos reservados</p>
+      </div>
+    </footer>
+    <script src="/PAGINAS/JavaScript/global.js"></script>
+  </body>
+</html>
